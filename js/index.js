@@ -1,18 +1,18 @@
 const cardsData = [
   {
-    image: "../public/images/Atendimento.png",
+    image: "./public/images/Atendimento.png",
     borderClass: "border1",
     title: "Atendimento de Qualidade",
     text: "Nossa prioridade é atendê-lo bem.",
   },
   {
-    image: "../public/images/Adicao.png",
+    image: "./public/images/Adicao.png",
     borderClass: "border2",
     title: "Profissionais Experientes",
     text: "Dispomos de uma equipe altamente qualificada.",
   },
   {
-    image: "../public/images/estrelas.png",
+    image: "./public/images/estrelas.png",
     borderClass: "border3",
     title: "Nota Máxima",
     text: "Nossa central de atendimento obteve nota máxima.",
