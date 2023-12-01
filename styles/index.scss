@@ -7,6 +7,10 @@ $bolder: 800;
 
 //Colors
 $purple: #8132af;
+$lightBlue: #72d1ca;
+$blue1: #3c5b9d;
+$blue2: #4194fd;
+
 
 html,
 body {
@@ -16,7 +20,7 @@ body {
 }
 
 header {
-    
+
     background: linear-gradient(90deg, rgba(203, 228, 255, 1) 0%, rgba(215, 255, 254, 1) 100%);
     padding-inline: 10rem;
 
@@ -76,9 +80,10 @@ main {
         justify-content: space-around;
         position: relative;
         z-index: 1;
-       
+
         bottom: 80px;
     }
+
     .card__form {
         display: flex;
         flex-direction: column;
@@ -93,7 +98,7 @@ main {
         padding: 20px;
         gap: 1rem;
         background-color: white;
-        
+
 
         .card-img-top {
             width: 80px;
@@ -119,5 +124,59 @@ main {
 
     .border3 {
         border-top: 10PX solid rgb(255, 208, 0);
+    }
+
+    .servicos__container {
+
+        display: flex;
+        justify-content: center;
+        padding-top: 5rem;
+        gap: 15rem;
+
+        .container__servicos__img {
+            .servicos__img {
+                width: 500px;
+                height: 500px;
+            }
+
+        }
+
+        .container__p__servicos {
+            width: 29rem;
+            text-align: justify;
+
+            h2 {
+                font-family: "Lilita One", sans-serif;
+                font-size: 2.2rem;
+            }
+
+            .p__velocidade {
+                span {
+                    font-weight: bold;
+                    margin: 0px;
+                    padding: 0px;
+                    color: $lightBlue;
+                }
+
+            }
+
+            .p__simplicidade {
+                span {
+                    font-weight: bold;
+                    margin: 0px;
+                    padding: 0px;
+                    color: $blue1;
+                }
+            }
+
+            .p__qualidade {
+                span {
+                    font-weight: bold;
+                    margin: 0px;
+                    padding: 0px;
+                    color: $blue2;
+                }
+            }
+        }
     }
 }

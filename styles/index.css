@@ -89,4 +89,40 @@ main .border2 {
 }
 main .border3 {
   border-top: 10PX solid rgb(255, 208, 0);
+}
+main .servicos__container {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  gap: 15rem;
+}
+main .servicos__container .container__servicos__img .servicos__img {
+  width: 500px;
+  height: 500px;
+}
+main .servicos__container .container__p__servicos {
+  width: 29rem;
+  text-align: justify;
+}
+main .servicos__container .container__p__servicos h2 {
+  font-family: "Lilita One", sans-serif;
+  font-size: 2.2rem;
+}
+main .servicos__container .container__p__servicos .p__velocidade span {
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+  color: #72d1ca;
+}
+main .servicos__container .container__p__servicos .p__simplicidade span {
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+  color: #3c5b9d;
+}
+main .servicos__container .container__p__servicos .p__qualidade span {
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+  color: #4194fd;
 }/*# sourceMappingURL=index.css.map */
