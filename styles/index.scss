@@ -188,21 +188,25 @@ main {
         align-items: center;
         text-align: center;
         padding-top: 5rem;
+
         h2 {
             font-family: "Lilita One", sans-serif;
             font-size: 2rem;
         }
+
         .cards__servicos {
             display: flex;
             gap: 5rem;
             padding-block: 1.5rem;
+
             .card__form {
                 height: 230px;
+
                 h5 {
                     font-family: "Lilita One", sans-serif;
                 }
             }
-            
+
         }
     }
 
@@ -217,20 +221,79 @@ main {
         overflow: hidden;
         gap: 15rem;
         background: linear-gradient(90deg, rgb(227, 239, 250) 0%, rgb(234, 255, 255) 100%);
+
         .profissionais__p {
             width: 35rem;
+
             h2 {
-                font-family: "Lilita One", sans-serif;  
+                font-family: "Lilita One", sans-serif;
             }
+
             p {
                 margin-top: 2.3rem;
                 text-align: justify;
             }
         }
+
         .profissionais__img__container {
             .profissional__img {
                 width: 350px;
             }
         }
     }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    padding-block: 5rem;
+    gap: 15rem;
+    background-color: rgb(12, 39, 78);
+    color: white;
+
+    ul {
+        line-height: 3rem;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+
+    }
+
+    .blc1__footer {
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            h1 {
+                font-family: "Passion One", sans-serif;
+                font-weight: $bolder;
+
+                span {
+                    color: $purple;
+                }
+            }
+
+            img {
+                width: 50px;
+            }
+        }
+    }
+
+    .blc2__footer, .blc3__footer {
+
+        span {
+            font-weight: bold;
+            font-family: "Lilita One", sans-serif;
+            font-size: large;
+        }
+
+    }
+
 }
