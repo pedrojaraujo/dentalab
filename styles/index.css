@@ -75,6 +75,7 @@ main .card__form .card-img-top {
   width: 80px;
 }
 main .card__form h5 {
+  font-family: "Lilita One", sans-serif;
   font-size: 1.1rem;
 }
 main .card__form p {
@@ -95,6 +96,7 @@ main .servicos__container {
   justify-content: center;
   padding-top: 5rem;
   gap: 15rem;
+  align-items: center;
 }
 main .servicos__container .container__servicos__img .servicos__img {
   width: 500px;
@@ -125,4 +127,26 @@ main .servicos__container .container__p__servicos .p__qualidade span {
   margin: 0px;
   padding: 0px;
   color: #4194fd;
+}
+main .about__servicos__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 5rem;
+}
+main .about__servicos__container h2 {
+  font-family: "Lilita One", sans-serif;
+  font-size: 2rem;
+}
+main .about__servicos__container .cards__servicos {
+  display: flex;
+  gap: 5rem;
+  padding-block: 1.5rem;
+}
+main .about__servicos__container .cards__servicos .card__form {
+  height: 230px;
+}
+main .about__servicos__container .cards__servicos .card__form h5 {
+  font-family: "Lilita One", sans-serif;
 }/*# sourceMappingURL=index.css.map */
