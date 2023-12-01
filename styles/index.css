@@ -149,4 +149,29 @@ main .about__servicos__container .cards__servicos .card__form {
 }
 main .about__servicos__container .cards__servicos .card__form h5 {
   font-family: "Lilita One", sans-serif;
+}
+main .profissionais__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
+  padding-top: 5rem;
+  height: 33.5rem;
+  overflow: hidden;
+  gap: 15rem;
+  background: linear-gradient(90deg, rgb(227, 239, 250) 0%, rgb(234, 255, 255) 100%);
+}
+main .profissionais__container .profissionais__p {
+  width: 35rem;
+}
+main .profissionais__container .profissionais__p h2 {
+  font-family: "Lilita One", sans-serif;
+}
+main .profissionais__container .profissionais__p p {
+  margin-top: 2.3rem;
+  text-align: justify;
+}
+main .profissionais__container .profissionais__img__container .profissional__img {
+  width: 350px;
 }/*# sourceMappingURL=index.css.map */
