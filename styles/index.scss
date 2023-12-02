@@ -246,17 +246,24 @@ main {
     width: 80%;
     height: 300px;
     .card__slide {
-      background-color: #72d1ca;
+      background: rgb(234, 255, 255);
       height: 250px;
-      width: 300px;
+      width: 500px;
+      border-radius: 15px;
       margin-top: 1.5rem;
       margin-inline: auto;
+      h2 {
+        font-family: "Lilita One", sans-serif;
+        font-size: 1.4rem;
+        margin-top: 5px;
+      }
     }
-
-    img {
-      width: 80px;
-      border-radius: 100px;
-      margin-top: 1.5rem;
+    .img__Slide__container {
+      img {
+        width: 80px;
+        border-radius: 100px;
+        margin-top: 1.2rem;
+      }
     }
   }
 }

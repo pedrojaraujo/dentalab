@@ -182,16 +182,22 @@ main .swiper {
   height: 300px;
 }
 main .swiper .card__slide {
-  background-color: #72d1ca;
+  background: rgb(234, 255, 255);
   height: 250px;
-  width: 300px;
+  width: 500px;
+  border-radius: 15px;
   margin-top: 1.5rem;
   margin-inline: auto;
 }
-main .swiper img {
+main .swiper .card__slide h2 {
+  font-family: "Lilita One", sans-serif;
+  font-size: 1.4rem;
+  margin-top: 5px;
+}
+main .swiper .img__Slide__container img {
   width: 80px;
   border-radius: 100px;
-  margin-top: 1.5rem;
+  margin-top: 1.2rem;
 }
 
 footer {
