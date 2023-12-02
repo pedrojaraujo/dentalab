@@ -92,9 +92,9 @@ const swiper = new Swiper(".swiper", {
     prevSlideMessage: "Previous slide",
     nextSlideMessage: "Next slide",
   },
-/*   autoplay: {
+  autoplay: {
     delay: 3000,
-  }, */
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",

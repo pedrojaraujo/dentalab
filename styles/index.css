@@ -83,13 +83,13 @@ main .card__form p {
   font-size: 14px;
 }
 main .border1 {
-  border-top: 10PX solid rgb(255, 166, 0);
+  border-top: 10px solid rgb(255, 166, 0);
 }
 main .border2 {
-  border-top: 10PX solid #8132af;
+  border-top: 10px solid #8132af;
 }
 main .border3 {
-  border-top: 10PX solid rgb(255, 208, 0);
+  border-top: 10px solid rgb(255, 208, 0);
 }
 main .servicos__container {
   display: flex;
@@ -176,13 +176,22 @@ main .profissionais__container .profissionais__img__container .profissional__img
   width: 350px;
 }
 main .swiper {
-  width: 80%;
-  height: 300px;
   align-items: center;
   text-align: center;
+  width: 80%;
+  height: 300px;
 }
-main .swiper .img__slide {
-  width: 50px;
+main .swiper .card__slide {
+  background-color: #72d1ca;
+  height: 250px;
+  width: 300px;
+  margin-top: 1.5rem;
+  margin-inline: auto;
+}
+main .swiper img {
+  width: 80px;
+  border-radius: 100px;
+  margin-top: 1.5rem;
 }
 
 footer {

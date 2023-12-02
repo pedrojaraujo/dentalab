@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Passion+One:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Passion+One:wght@400;700;900&display=swap");
 
 // Font weight
 $bolder: 800;
@@ -11,305 +11,301 @@ $lightBlue: #72d1ca;
 $blue1: #3c5b9d;
 $blue2: #4194fd;
 
-
 html,
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
+  background: linear-gradient(
+    90deg,
+    rgba(203, 228, 255, 1) 0%,
+    rgba(215, 255, 254, 1) 100%
+  );
+  padding-inline: 10rem;
 
-    background: linear-gradient(90deg, rgba(203, 228, 255, 1) 0%, rgba(215, 255, 254, 1) 100%);
-    padding-inline: 10rem;
+  h1 {
+    font-family: "Passion One", sans-serif;
+    font-weight: $bolder;
 
-    h1 {
+    span {
+      color: $purple;
+    }
+  }
+
+  .logo__Container {
+    display: flex;
+    align-items: end;
+    gap: 0.2rem;
+
+    img {
+      width: 75px;
+      height: 75px;
+    }
+  }
+
+  .banner__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 35rem;
+  }
+
+  .text__banner {
+    width: 500px;
+
+    button {
+      font-size: medium;
+      width: 40%;
+      padding-block: 15px;
+    }
+
+    h2 {
+      font-family: "Lilita One", sans-serif;
+      font-size: 3rem;
+    }
+
+    p {
+      width: 65%;
+    }
+  }
+}
+
+main {
+  .card__container {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+
+    bottom: 80px;
+  }
+
+  .card__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 1px 1px 60px rgb(175, 175, 175);
+    border-radius: 1.5rem;
+    padding: 20px;
+    gap: 1rem;
+    background-color: white;
+
+    .card-img-top {
+      width: 80px;
+    }
+
+    h5 {
+      font-family: "Lilita One", sans-serif;
+      font-size: 1.1rem;
+    }
+
+    p {
+      margin-top: 0.2rem;
+      font-size: 14px;
+    }
+  }
+
+  .border1 {
+    border-top: 10px solid rgb(255, 166, 0);
+  }
+
+  .border2 {
+    border-top: 10px solid $purple;
+  }
+
+  .border3 {
+    border-top: 10px solid rgb(255, 208, 0);
+  }
+
+  .servicos__container {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    gap: 15rem;
+    align-items: center;
+
+    .container__servicos__img {
+      .servicos__img {
+        width: 500px;
+        height: 500px;
+      }
+    }
+
+    .container__p__servicos {
+      width: 29rem;
+      text-align: justify;
+
+      h2 {
+        font-family: "Lilita One", sans-serif;
+        font-size: 2.2rem;
+      }
+
+      .p__velocidade {
+        span {
+          font-weight: bold;
+          margin: 0px;
+          padding: 0px;
+          color: $lightBlue;
+        }
+      }
+
+      .p__simplicidade {
+        span {
+          font-weight: bold;
+          margin: 0px;
+          padding: 0px;
+          color: $blue1;
+        }
+      }
+
+      .p__qualidade {
+        span {
+          font-weight: bold;
+          margin: 0px;
+          padding: 0px;
+          color: $blue2;
+        }
+      }
+    }
+  }
+
+  .about__servicos__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 5rem;
+
+    h2 {
+      font-family: "Lilita One", sans-serif;
+      font-size: 2rem;
+    }
+
+    .cards__servicos {
+      display: flex;
+      gap: 5rem;
+      padding-block: 1.5rem;
+
+      .card__form {
+        height: 230px;
+
+        h5 {
+          font-family: "Lilita One", sans-serif;
+        }
+      }
+    }
+  }
+
+  .profissionais__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+    padding-top: 5rem;
+    height: 33.5rem;
+    overflow: hidden;
+    gap: 15rem;
+    background: linear-gradient(
+      90deg,
+      rgb(227, 239, 250) 0%,
+      rgb(234, 255, 255) 100%
+    );
+
+    .profissionais__p {
+      width: 35rem;
+
+      h2 {
+        font-family: "Lilita One", sans-serif;
+      }
+
+      p {
+        margin-top: 2.3rem;
+        text-align: justify;
+      }
+    }
+
+    .profissionais__img__container {
+      .profissional__img {
+        width: 350px;
+      }
+    }
+  }
+
+  .swiper {
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: 300px;
+    .card__slide {
+      background-color: #72d1ca;
+      height: 250px;
+      width: 300px;
+      margin-top: 1.5rem;
+      margin-inline: auto;
+    }
+
+    img {
+      width: 80px;
+      border-radius: 100px;
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+  padding-block: 5rem;
+  gap: 15rem;
+  background-color: rgb(12, 39, 78);
+  color: white;
+
+  ul {
+    line-height: 3rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blc1__footer {
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      h1 {
         font-family: "Passion One", sans-serif;
         font-weight: $bolder;
 
         span {
-            color: $purple;
+          color: $purple;
         }
+      }
+
+      img {
+        width: 50px;
+      }
     }
+  }
 
-    .logo__Container {
-        display: flex;
-        align-items: end;
-        gap: 0.2rem;
-
-        img {
-            width: 75px;
-            height: 75px;
-        }
+  .blc2__footer,
+  .blc3__footer {
+    span {
+      font-weight: bold;
+      font-family: "Lilita One", sans-serif;
+      font-size: large;
     }
-
-
-    .banner__container {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        height: 35rem;
-
-    }
-
-    .text__banner {
-        width: 500px;
-
-        button {
-            font-size: medium;
-            width: 40%;
-            padding-block: 15px;
-        }
-
-        h2 {
-            font-family: "Lilita One", sans-serif;
-            font-size: 3rem;
-        }
-
-        p {
-            width: 65%;
-        }
-    }
-}
-
-main {
-
-    .card__container {
-        display: flex;
-        justify-content: space-around;
-        position: relative;
-        z-index: 1;
-
-        bottom: 80px;
-    }
-
-    .card__form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 300px;
-        height: 200px;
-        overflow: hidden;
-        justify-content: center;
-        text-align: center;
-        box-shadow: 1px 1px 60px rgb(175, 175, 175);
-        border-radius: 1.5rem;
-        padding: 20px;
-        gap: 1rem;
-        background-color: white;
-
-
-        .card-img-top {
-            width: 80px;
-        }
-
-        h5 {
-            font-family: "Lilita One", sans-serif;
-            font-size: 1.1rem;
-        }
-
-        p {
-            margin-top: 0.2rem;
-            font-size: 14px;
-        }
-    }
-
-    .border1 {
-        border-top: 10PX solid rgb(255, 166, 0);
-    }
-
-    .border2 {
-        border-top: 10PX solid $purple;
-    }
-
-    .border3 {
-        border-top: 10PX solid rgb(255, 208, 0);
-    }
-
-    .servicos__container {
-
-        display: flex;
-        justify-content: center;
-        padding-top: 5rem;
-        gap: 15rem;
-        align-items: center;
-
-        .container__servicos__img {
-            .servicos__img {
-                width: 500px;
-                height: 500px;
-            }
-
-        }
-
-        .container__p__servicos {
-            width: 29rem;
-            text-align: justify;
-
-            h2 {
-                font-family: "Lilita One", sans-serif;
-                font-size: 2.2rem;
-            }
-
-            .p__velocidade {
-                span {
-                    font-weight: bold;
-                    margin: 0px;
-                    padding: 0px;
-                    color: $lightBlue;
-                }
-
-            }
-
-            .p__simplicidade {
-                span {
-                    font-weight: bold;
-                    margin: 0px;
-                    padding: 0px;
-                    color: $blue1;
-                }
-            }
-
-            .p__qualidade {
-                span {
-                    font-weight: bold;
-                    margin: 0px;
-                    padding: 0px;
-                    color: $blue2;
-                }
-            }
-        }
-    }
-
-    .about__servicos__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding-top: 5rem;
-
-        h2 {
-            font-family: "Lilita One", sans-serif;
-            font-size: 2rem;
-        }
-
-        .cards__servicos {
-            display: flex;
-            gap: 5rem;
-            padding-block: 1.5rem;
-
-            .card__form {
-                height: 230px;
-
-                h5 {
-                    font-family: "Lilita One", sans-serif;
-                }
-            }
-
-        }
-    }
-
-    .profissionais__container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-top: 5rem;
-        padding-top: 5rem;
-        height: 33.5rem;
-        overflow: hidden;
-        gap: 15rem;
-        background: linear-gradient(90deg, rgb(227, 239, 250) 0%, rgb(234, 255, 255) 100%);
-
-        .profissionais__p {
-            width: 35rem;
-
-            h2 {
-                font-family: "Lilita One", sans-serif;
-            }
-
-            p {
-                margin-top: 2.3rem;
-                text-align: justify;
-            }
-        }
-
-        .profissionais__img__container {
-            .profissional__img {
-                width: 350px;
-            }
-        }
-    }
-
-    .swiper {
-
-        width: 80%;
-        height: 300px;
-        align-items: center;
-        text-align: center;
-
-        .img__slide {
-            width: 50px;
-        }
-
-
-    }
-
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 15rem;
-    padding-block: 5rem;
-    gap: 15rem;
-    background-color: rgb(12, 39, 78);
-    color: white;
-
-    ul {
-        line-height: 3rem;
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-
-
-    }
-
-    .blc1__footer {
-
-        li {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-
-            h1 {
-                font-family: "Passion One", sans-serif;
-                font-weight: $bolder;
-
-                span {
-                    color: $purple;
-                }
-            }
-
-            img {
-                width: 50px;
-            }
-        }
-    }
-
-    .blc2__footer,
-    .blc3__footer {
-
-        span {
-            font-weight: bold;
-            font-family: "Lilita One", sans-serif;
-            font-size: large;
-        }
-
-    }
-
+  }
 }
