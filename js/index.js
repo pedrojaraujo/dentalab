@@ -94,8 +94,8 @@ function createCards(data) {
     const cardElement = `
         <div class="card__form ${card.borderClass}">
           <img src="${card.image}" class="card-img-top" alt="Imagem ${
-      index + 1
-    }">
+            index + 1
+          }">
           <div class="card-body">
             <h5 class="card-title">${card.title}</h5>
             <p class="card-text">${card.text}</p>
@@ -115,8 +115,8 @@ function createCardsServicos(data) {
     const cardElement = `
         <div class="card__form">
           <img src="${card.image}" class="card-img-top" alt="Imagem ${
-      index + 1
-    }">
+            index + 1
+          }">
           <div class="card-body">
             <h5 class="card-title">${card.title}</h5>
             <p class="card-text">${card.text}</p>
@@ -147,6 +147,7 @@ function createCardsAvaliacao(data) {
         alt="avaliacao do atendimento"
       />
     </div>
+    
   </div>
       `;
 
@@ -157,17 +158,18 @@ createCardsAvaliacao(cardsAvaliacao);
 /* Carrossel starter */
 
 const swiper = new Swiper(".swiper", {
-  speed: 400,
-  spaceBetween: 100,
-  a11y: {
-    prevSlideMessage: "Previous slide",
-    nextSlideMessage: "Next slide",
+  speed: 1500,
+  spaceBetween: 10,
+  slidesPerView: 3, // Mostra três slides por vez
+  slidesPerGroup: 1,
+  effect: "slide",
+  rows: 2,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
   },
+
   autoplay: {
     delay: 3000,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
   },
 });
