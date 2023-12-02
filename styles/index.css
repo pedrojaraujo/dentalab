@@ -194,10 +194,16 @@ main .swiper .card__slide h2 {
   font-size: 1.4rem;
   margin-top: 5px;
 }
+main .swiper img {
+  width: 100px;
+}
 main .swiper .img__Slide__container img {
   width: 80px;
-  border-radius: 100px;
+  height: 80px;
+  border-radius: 50%;
   margin-top: 1.2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer {

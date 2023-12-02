@@ -42,6 +42,26 @@ const cardsDataServicos = [
   },
 ];
 
+const cardsAvaliacao = [
+  {
+    image: "public/images/perfil.png",
+    name: "Pedro Joaquim Araujo",
+    text: "A DentLab é incrível! Profissionais super competentes e atenciosos.",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Amanda Soares",
+    text: "Adorei o espaço da DentLab, super moderno e acolhedor.",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1504199367641-aba8151af406?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbiUyMGZhY2UlMjBzbWlsZXxlbnwwfDF8MHx8fDA%3D",
+    name: "Roberto Silva",
+    text: "O atendimento na DentLab é incrível, cuidam de cada paciente de    forma única.",
+  },
+];
+
 // Função para criar os cards dinamicamente
 function createCards(data) {
   const cardContainer = $(".card__container");
@@ -62,6 +82,7 @@ function createCards(data) {
     cardContainer.append(cardElement);
   });
 }
+createCards(cardsData);
 
 function createCardsServicos(data) {
   const cardContainer = $(".cards__servicos");
@@ -83,6 +104,32 @@ function createCardsServicos(data) {
   });
 }
 
+createCardsServicos(cardsDataServicos);
+
+function createCardsAvaliacao(data) {
+  const cardContainer = $(".swiper-wrapper");
+
+  data.forEach((card) => {
+    const cardElement = `
+    <div class="swiper-slide">
+    <div class="card__slide">
+      <div class="img__Slide__container">
+        <img src="${card.image}" alt="imagem do perfil" />
+      </div>
+      <h2>${card.name}</h2>
+      <p>"${card.text}"</p>
+      <img
+        src="public/images/5estrelas.png"
+        alt="avaliacao do atendimento"
+      />
+    </div>
+  </div>
+      `;
+
+    cardContainer.append(cardElement);
+  });
+}
+createCardsAvaliacao(cardsAvaliacao);
 /* Carrossel starter */
 
 const swiper = new Swiper(".swiper", {
@@ -100,6 +147,3 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
-
-createCards(cardsData);
-createCardsServicos(cardsDataServicos);

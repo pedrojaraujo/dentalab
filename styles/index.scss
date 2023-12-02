@@ -258,11 +258,17 @@ main {
         margin-top: 5px;
       }
     }
+
+    img {
+      width: 100px;
+    }
     .img__Slide__container {
       img {
         width: 80px;
-        border-radius: 100px;
+        height: 80px; // Define uma altura igual à largura para garantir um círculo
+        border-radius: 50%; // Define o border-radius para fazer a imagem um círculo
         margin-top: 1.2rem;
+        object-fit: cover; // Preencherá o contêiner e manterá a proporção da imagem
       }
     }
   }
