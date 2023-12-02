@@ -175,6 +175,15 @@ main .profissionais__container .profissionais__p p {
 main .profissionais__container .profissionais__img__container .profissional__img {
   width: 350px;
 }
+main .swiper {
+  width: 80%;
+  height: 300px;
+  align-items: center;
+  text-align: center;
+}
+main .swiper .img__slide {
+  width: 50px;
+}
 
 footer {
   display: flex;
@@ -208,7 +217,8 @@ footer .blc1__footer li h1 span {
 footer .blc1__footer li img {
   width: 50px;
 }
-footer .blc2__footer span, footer .blc3__footer span {
+footer .blc2__footer span,
+footer .blc3__footer span {
   font-weight: bold;
   font-family: "Lilita One", sans-serif;
   font-size: large;

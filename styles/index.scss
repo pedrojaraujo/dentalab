@@ -241,6 +241,21 @@ main {
             }
         }
     }
+
+    .swiper {
+
+        width: 80%;
+        height: 300px;
+        align-items: center;
+        text-align: center;
+
+        .img__slide {
+            width: 50px;
+        }
+
+
+    }
+
 }
 
 footer {
@@ -286,7 +301,8 @@ footer {
         }
     }
 
-    .blc2__footer, .blc3__footer {
+    .blc2__footer,
+    .blc3__footer {
 
         span {
             font-weight: bold;

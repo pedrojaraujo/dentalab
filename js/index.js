@@ -83,5 +83,23 @@ function createCardsServicos(data) {
   });
 }
 
+/* Carrossel starter */
+
+const swiper = new Swiper(".swiper", {
+  speed: 400,
+  spaceBetween: 100,
+  a11y: {
+    prevSlideMessage: "Previous slide",
+    nextSlideMessage: "Next slide",
+  },
+/*   autoplay: {
+    delay: 3000,
+  }, */
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 createCards(cardsData);
-createCardsServicos(cardsDataServicos)
+createCardsServicos(cardsDataServicos);
