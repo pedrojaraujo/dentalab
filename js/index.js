@@ -60,6 +60,30 @@ const cardsAvaliacao = [
     name: "Roberto Silva",
     text: "O atendimento na DentLab é incrível, cuidam de cada paciente de    forma única.",
   },
+  {
+    image:
+      "https://media.istockphoto.com/id/1473207467/pt/foto/face-beauty-and-skincare-with-a-model-black-woman-in-studio-on-a-gray-background-to-promote.webp?b=1&s=170667a&w=0&k=20&c=4ZNVc30x6jfpJAM1oexjKp7FWh44NREerDthZiPNmXs=",
+    name: "Maria Luiza",
+    text: "A DentLab é um lugar incrível, com profissionais super atenciosos e competentes.",
+  },
+  {
+    image:
+      "https://media.istockphoto.com/id/1312105172/pt/foto/happy-african-man-looking-at-camera-indoors-at-home-focus-on-face.webp?b=1&s=170667a&w=0&k=20&c=NOVeCgbtfZ7Atn2LjIq4O_sOaZvGP8mNB3duq-TtvUY=",
+    name: "Lucas Silva",
+    text: "O atendimento prestado pela equipe odontológica é simplesmente notável. Profissionais atenciosos que tornam cada visita uma experiência confortável e informativa.",
+  },
+  {
+    image:
+      "https://media.istockphoto.com/id/1444339602/pt/foto/black-woman-african-beauty-and-skincare-health-of-luxury-spa-model-with-a-smile-on-an-orange.webp?b=1&s=170667a&w=0&k=20&c=LS96O58Q_147zJUWRqGaBWAK6l07J78FWCC7a23vAMA=",
+    name: "Julia Santos",
+    text: "A qualidade do trabalho odontológico é impressionante. Os profissionais demonstram um alto nível de habilidade e conhecimento, garantindo um serviço de alta qualidade.",
+  },
+  {
+    image:
+      "https://media.istockphoto.com/id/1428996320/pt/foto/young-happy-man-smiling-on-camera-outdoor-focus-on-face.webp?b=1&s=170667a&w=0&k=20&c=OLOT1dZrIVsu5R_GA9i7I37pyF2Ap9DQnnLHDX9P-pE=",
+    name: "Gabriel Souza",
+    text: "O cuidado personalizado oferecido é excepcional. Cada paciente é tratado de forma individualizada, com um plano de tratamento adaptado às suas necessidades específicas.",
+  },
 ];
 
 // Função para criar os cards dinamicamente
